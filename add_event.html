@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Contact Form #6</title>
+</head>
+<body>
+
+
+<div class="content">
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+
+            <h3 class="heading mb-4">Añadir Evento</h3>
+
+            <p><img src="images/undraw-contact.svg" alt="Image" class="img-fluid"></p>
+
+
+          </div>
+          <div class="col-md-6">
+            <h2><?php echo $date ;?></h2>
+            <form class="mb-5" method="post" id="contactForm" name="contactForm">
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Nombre Empleado">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Motivo">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <input type="text" class="form-control" name="hour" id="hour" placeholder="10:00">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <input type="text" class="form-control" name="telf" id="telf" placeholder="000 00 00 00">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <select name="color" style="padding: 12px;">
+                    <option>Color</option>
+                    <option value="green" style="color:#51ce57;">&#9724; Verde</option>
+                    <option value="blue" style="color:#518fce;">&#9724; Azul</option>
+                    <option value="yellow" style="color:#f7c30d;">&#9724; Amarillo</option>
+                    <option value="red" style="color:#ce5151;">&#9724; Rojo</option>
+                  </select>
+                  <input type="submit" value="Añadir" class="btn btn-primary rounded-0 py-2 px-4">
+                  <span class="submitting"></span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
