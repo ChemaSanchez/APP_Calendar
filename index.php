@@ -8,10 +8,9 @@ if(!empty($_POST)){
     if(!empty($_POST['ant'])){
         $action = -1;
     }
-
 }
 
-$fecha = date('Y-m', strtotime($action .' month')). '-1';
+$fecha = date('Y-m-d', strtotime($action .' month'));
 
 var_dump($fecha);
 

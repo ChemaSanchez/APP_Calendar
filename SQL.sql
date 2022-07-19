@@ -8,8 +8,9 @@ CREATE TABLE IF NOT EXISTS calendar(
     hour    varchar(255) NOT NULL DEFAULT '',
     telf    varchar(255) NOT NULL DEFAULT '',
     date    varchar(255) NOT NULL,
+    color    varchar(255) NOT NULL DEFAULT 'blue',
     PRIMARY KEY (id)
-) ENGINE = InnoDB
-  AUTO_INCREMENT = 2
-  DEFAULT CHARSET = utf8mb4
-  ROW_FORMAT = COMPRESSED;
+    ) ENGINE = InnoDB
+    AUTO_INCREMENT = 2
+    DEFAULT CHARSET = utf8mb4
+    ROW_FORMAT = COMPRESSED;

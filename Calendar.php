@@ -5,7 +5,6 @@ class Calendar {
     private $events = [];
 
     public function __construct($date = null) {
-        var_dump($date);
         setlocale(LC_ALL, "es_ES", 'Spanish_Spain', 'Spanish');
         $this->active_year = $date != null ? date('Y', strtotime($date)) : date('Y');
         $this->active_month = $date != null ? date('m', strtotime($date)) : date('m');

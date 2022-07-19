@@ -31,6 +31,8 @@ if(!empty($_POST)){
     $telf = $_POST['telf'];
     $color = $_POST['color'];
 
+    var_dump($_POST);
+
     $sentencia = $mysqli->prepare("INSERT INTO calendar (name, subject, hour, telf, date, color) VALUES (?,?,?,?,?,?)");
     $sentencia->bind_param("ssssss", $name, $subject, $hour, $telf, $date_sql, $color);
     $sentencia->execute();
